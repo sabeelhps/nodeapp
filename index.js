@@ -12,7 +12,7 @@ var mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'DEMO',
+    database: 'Homework',
     multipleStatements: true
 });
 
