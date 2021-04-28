@@ -11,8 +11,8 @@ app.use(express.static(path.join(__dirname,'/public')));
 var mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Ambika@72',
-    database: 'Homework',
+    password: 'root',
+    database: 'student',
     multipleStatements: true
 });
 
@@ -35,7 +35,7 @@ app.post('/query', (req, res) => {
     const { queryString } = req.body;
     mysqlConnection.query(queryString, (err, rows, fields) => {
         if (!err) {
-            console.log(fields);
+           
             if (rows.length!==0) {
                 res.send(rows);
             } else {
