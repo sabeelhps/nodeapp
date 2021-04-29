@@ -4,9 +4,11 @@ const table = document.querySelector('#table');
 
 const refreshPage = async() => {
     console.log(inp);
-    for (let item of table.children) {
-        item.remove();
+
+    while (table.firstChild) {
+        table.removeChild(table.firstChild);
     }
+  
 
     const res = await axios.post('/query',{queryString:inp.value});
 
