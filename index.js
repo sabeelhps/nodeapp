@@ -11,8 +11,8 @@ app.use(express.static(path.join(__dirname,'/public')));
 var mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'root',
-    database: 'student',
+    password: 'Ambika@72',
+    database: 'Homework',
     multipleStatements: true
 });
 
