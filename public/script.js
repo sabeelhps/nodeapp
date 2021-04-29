@@ -32,7 +32,7 @@ const refreshPage = async() => {
         tableBody += str;
         tableBody += '</tr>'
     }
-    tableBody += "<tbody>";
+    tableBody += "</tbody>";
     table.innerHTML += tableBody;
     console.log(tableBody);
 
